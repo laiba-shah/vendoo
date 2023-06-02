@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575551882451",
+    "project_id": "vendoo-bd009",
+    "storage_bucket": "vendoo-bd009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575551882451:android:8cf05d8ad4c7616ca1c026",
+        "android_client_info": {
+          "package_name": "com.example.vendoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCth5jQsM3yzaI4O4Silbwy79CB4KbqCXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
