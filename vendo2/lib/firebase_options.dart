@@ -50,21 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBeszZHLYJNyjUhpujMH9yZ4ol9JqsAmPU',
-    appId: '1:288842837392:android:1353619813061d867a5715',
-    messagingSenderId: '288842837392',
-    projectId: 'we-chat-75f13',
-    storageBucket: 'we-chat-75f13.appspot.com',
+    apiKey: 'AIzaSyCth5jQsM3yzaI4O4Silbwy79CB4KbqCXc',
+    appId: '1:575551882451:android:d74172b97576b6b7a1c026',
+    messagingSenderId: '575551882451',
+    projectId: 'vendoo-bd009',
+    storageBucket: 'vendoo-bd009.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCCYZoZ5DvuitZJ7qK5iWM3ARHBDoFFriY',
-    appId: '1:288842837392:ios:f39c8dc31525a6687a5715',
-    messagingSenderId: '288842837392',
-    projectId: 'we-chat-75f13',
-    storageBucket: 'we-chat-75f13.appspot.com',
-    androidClientId: '288842837392-gvt1l790g0t1fmnurc5pmko3oss8b1tq.apps.googleusercontent.com',
-    iosClientId: '288842837392-sgib97u6439i4jte3bo19u00fh663euu.apps.googleusercontent.com',
-    iosBundleId: 'com.harshRajpurohit.weChat',
+    apiKey: 'AIzaSyBIUgAUbWxg1LUqIC8h_hHhZ3WIrTgxFso',
+    appId: '1:575551882451:ios:2fbf94289fd03915a1c026',
+    messagingSenderId: '575551882451',
+    projectId: 'vendoo-bd009',
+    storageBucket: 'vendoo-bd009.appspot.com',
+    iosBundleId: 'com.example.vendo2',
   );
 }
