@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../api/apis.dart';
+import 'api/apis.dart';
 import '../helper/dialogs.dart';
 import '../main.dart';
 import '../models/chat_user.dart';

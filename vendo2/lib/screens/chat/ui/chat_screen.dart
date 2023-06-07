@@ -7,13 +7,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../api/apis.dart';
-import '../helper/my_date_util.dart';
-import '../main.dart';
-import '../models/chat_user.dart';
-import '../models/message.dart';
-import '../widgets/message_card.dart';
-import 'view_profile_screen.dart';
+import '../../api/apis.dart';
+import '../../../helper/my_date_util.dart';
+import '../../../main.dart';
+import '../../../models/chat_user.dart';
+import '../../../models/message.dart';
+import '../../../widgets/message_card.dart';
+import '../../account/ui/view_profile_screen.dart';
 
 class ChatScreen extends StatefulWidget {
   final ChatUser user;

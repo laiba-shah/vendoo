@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 
-import '../api/apis.dart';
+import '../screens/api/apis.dart';
 import '../helper/dialogs.dart';
 import '../helper/my_date_util.dart';
 import '../main.dart';

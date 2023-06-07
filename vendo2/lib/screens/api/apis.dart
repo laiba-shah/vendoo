@@ -8,8 +8,8 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:http/http.dart';
 
-import '../models/chat_user.dart';
-import '../models/message.dart';
+import '../../models/chat_user.dart';
+import '../../models/message.dart';
 
 class APIs {
   // for authentication

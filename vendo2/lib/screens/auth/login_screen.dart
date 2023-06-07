@@ -5,10 +5,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../api/apis.dart';
+import '../api/apis.dart';
 import '../../helper/dialogs.dart';
 import '../../main.dart';
-import '../home_screen.dart';
+import '../home/ui/home_screen.dart';
 
 //login screen -- implements google sign in or sign up feature for app
 class LoginScreen extends StatefulWidget {
@@ -46,11 +46,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
         if ((await APIs.userExists())) {
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+              context, MaterialPageRoute(builder: (_) => const Homepage()));
         } else {
           await APIs.createUser().then((value) {
             Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+                context, MaterialPageRoute(builder: (_) => const Homepage()));
           });
         }
       }

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_notification_channel/flutter_notification_channel.dart';
 import 'package:flutter_notification_channel/notification_importance.dart';
-import 'package:vendo2/screens/splash_screen.dart';
+import 'package:vendo2/screens/splash/splash_screen.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -28,23 +28,43 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'We Chat',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-            appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          elevation: 1,
-          iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.normal, fontSize: 19),
-          backgroundColor: Colors.white,
-        )),
-        home: const SplashScreen());
+    return ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, _) {
+          return MaterialApp(
+            title: 'Homepage',
+            theme: ThemeData(
+              primarySwatch: Colors.purple,
+              brightness:
+                  themeProvider.isDarkMode ? Brightness.dark : Brightness.light,
+            ),
+            darkTheme: ThemeData(
+              primarySwatch: Colors.purple,
+              brightness: Brightness.dark,
+            ),
+            home: const SplashScreen(), // Display the splash screen first
+            routes: {
+              '/home': (context) => HomePage(key: const ValueKey('myHomePage')),
+            },
+            debugShowCheckedModeBanner: false,
+          );
+        },
+      ),
+    );
+  }
+}
+
+class ThemeProvider extends ChangeNotifier {
+  bool isDarkMode = false;
+
+  void toggleTheme() {
+    isDarkMode = !isDarkMode;
+    notifyListeners();
   }
 }
 
