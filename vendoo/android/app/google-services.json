@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119840048542",
+    "project_id": "vendoo-chat",
+    "storage_bucket": "vendoo-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119840048542:android:424448d97c606e3cb8028f",
+        "android_client_info": {
+          "package_name": "com.example.vendoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxZ-1e4LBtxYpi82i86yTRjl9NBgu1I-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
